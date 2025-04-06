@@ -130,23 +130,71 @@
 .card{margin-bottom: 10px;}
 .content-body{padding: 10px;}
 .header_menu{padding: 10px;}
+
+
 .footer{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background:  var(--primary-color);
+}
+.footer a{ color: #fff;}
+.footer ul{margin: 0;}
+
+
+
+
+/* ------------------------page clubs-------------------------------------- */
+.club-content{
+  padding-top: 3rem;
 }
 .card-img{
   background: url(../img/view-empty-football-stadium.jpg); 
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 15vh; 
+  height: 30vh; 
 }
-.footer a{ color: #fff;}
+.img-team img{
+  width: 150px;
+  height: fit-content;
+}
+.img-team {
+  display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+ }
+#hover-content {
+  visibility: hidden;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s 0.5s;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    border-radius: 5px;
+    height: inherit;
+}
 
-/* ------------------------page clubs-------------------------------------- */
-.club-content{
-  padding-top: 3rem;
+#parent:hover #hover-content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: 
+      opacity 0.5s ease, 
+      transform 0.5s ease;
+      background: linear-gradient(359deg, #0F3C12, #1d5d21a8, #2e6b2f80);
+}
+.team-name{
+  width: 100%;
+   
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  background: linear-gradient(359deg, #0F3C12, #1d5d21a8, #2e6b2f80);
+}
+.team-name h6{
+  margin: 0;
 }
 /* ------------------------page clubs-------------------------------------- */

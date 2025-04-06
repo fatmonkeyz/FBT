@@ -85,26 +85,7 @@
     </div>
   </div>
   <style>
- #hover-content {
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: 
-        opacity 0.5s ease, 
-        transform 0.5s ease, 
-        visibility 0s 0.5s;
-    position: relative;
-}
-
-#parent:hover #hover-content {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    transition: 
-        opacity 0.5s ease, 
-        transform 0.5s ease;
-    background: red;
-}
+ 
   </style>
  <div class="club-content">
   <div class="container">
@@ -134,10 +115,13 @@
     <div class="card">
       <div class="content-body">
       <div class="row">
-      <div class="col-sm-4">
+      <div class="col-lg-4">
         <div id="parent" class="card card-img">
+          <div class="img-team">
+            <img   src="asset/img/logo_footclub_400px.png" alt="">
+          </div>
            
-          <div class="team-name">TEAM A</div>
+          <div class="team-name"><h6>TEAM A</h6> </div>
         
           <div id="hover-content">
             <h4>TEAM A</h4>
@@ -149,10 +133,13 @@
           </div>
         </div> 
       </div>
-      <div class="col-sm-4">
+      <div class="col-lg-4">
         <div id="parent" class="card card-img">
+          <div class="img-team">
+            <img   src="asset/img/logo_footclub_400px.png" alt="">
+          </div>
            
-          <div class="team-name">TEAM A</div>
+          <div class="team-name"><h6>TEAM B</h6> </div>
         
           <div id="hover-content">
             <h4>TEAM A</h4>
@@ -164,10 +151,13 @@
           </div>
         </div> 
       </div>
-      <div class="col-sm-4">
+      <div class="col-lg-4">
         <div id="parent" class="card card-img">
-        
-          <div class="team-name">TEAM A</div>
+          <div class="img-team">
+            <img   src="asset/img/logo_footclub_400px.png" alt="">
+          </div>
+           
+          <div class="team-name"><h6>TEAM C</h6> </div>
         
           <div id="hover-content">
             <h4>TEAM A</h4>
@@ -179,6 +169,8 @@
           </div>
         </div> 
       </div>
+      
+      
     </div>
     <div class="text-center">
       <button>view all</button>
