@@ -199,6 +199,29 @@
 
 /* ------------------------page clubs-------------------------------------- */
 
+/* ------------------------ clubs Detail-------------------------------------- */
+.club-detail{
+  padding: 2rem;
+}
+.img_club img{
+  width: 200px;
+}
+.club-details-toppic {
+  font-size: .875rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.text-normal{
+  font-size: .875rem;  
+
+}
+.club-name{
+  padding-left: 10px;
+}
+/* ------------------------ clubs Detail-------------------------------------- */
+
+
+
 /* ------------------------margin element-------------------------------------- */
 .m-l-5 { margin-left: 5px; }
 .m-l-10 { margin-left: 10px; }
