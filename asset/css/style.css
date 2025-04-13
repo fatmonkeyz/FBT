@@ -124,6 +124,26 @@
   background: var(--primary-btn-color);
   color: #fff;
 }
+.form-switch .form-check-input {
+  width: 3em;
+}
+.form-check-input {
+  height: 1.5em;
+}
+.form-check {
+  display: flex;
+  justify-content: flex-end;
+}
+.form-check-label {
+  margin-right: 40px;
+  display: inherit
+;
+  align-items: center;
+}
+.form-check-input:checked {
+  background-color: var(--primary-btn-color);
+    border-color: var(--primary-btn-color);
+}
 /* button */
 
 .card .row{
