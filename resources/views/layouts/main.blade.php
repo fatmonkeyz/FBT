@@ -18,8 +18,8 @@
       <div class="container">
      <div class="nav_bar_status_wrap">
         <div class=" d-flex">
-          <p>Username : xxxxxxxxxxxxxx</p>
-          <span><p class="m-l-10">role : xxxxxxxxxxxxxx</p></span>
+          <p>Username : Admin</p>
+          <span><p class="m-l-10">role : Admin</p></span>
           <div class="ms-auto">
             <p>Logout</p>
           </div>
@@ -80,17 +80,17 @@
   <div class="p-5   bg_img  ">
     <div class="container py-5 text-center">
       @if(Route::currentRouteName() == 'clublist')
-        <h1 class="display-5 fw-bold">CLUB</h1>
+        <h1 class="display-5 fw-bold color_jumboton">CLUB</h1>
       @elseif(Route::currentRouteName() == 'player' || Route::currentRouteName() == 'player.index')
-        <h1 class="display-5 fw-bold">PLAYER</h1>
+        <h1 class="display-5 fw-bold color_jumboton">PLAYER</h1>
       @elseif(Route::currentRouteName() == 'Staff.index' || Route::currentRouteName() == 'staff.index')
-        <h1 class="display-5 fw-bold">STAFF</h1>
+        <h1 class="display-5 fw-bold color_jumboton">STAFF</h1>
       @elseif(Route::currentRouteName() == 'team')
-        <h1 class="display-5 fw-bold">TEAMS</h1>
+        <h1 class="display-5 fw-bold color_jumboton">TEAMS</h1>
       @elseif(Route::currentRouteName() == 'welcome')
-        <h1 class="display-5 fw-bold">WELCOME</h1>
+        <h1 class="display-5 fw-bold color_jumboton">WELCOME</h1>
       @else
-        <h1 class="display-5 fw-bold">CLUB</h1>
+        <h1 class="display-5 fw-bold color_jumboton">CLUB</h1>
       @endif
       
     

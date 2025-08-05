@@ -65,8 +65,30 @@
 }
 /* ------------------------navbar-------------------------------------- */
 /* --------------------------jumbotronnindex -----------------------------*/
-.bg_img{
-  background: var(--primary-color);
+.bg_img{ 
+      background: linear-gradient(rgb(255 255 255 / 0%), rgb(29 93 33 / 82%)), /* เพิ่ม Gradient สีดำทึบ 50% */ url(../storage/Gemini_Generated_Image_cagk16cagk16cagk.png) no-repeat center center fixed;
+    background-size: cover;
+}
+.bg_img_club {
+background: linear-gradient(#8caf33c4, rgb(0 0 0 / 76%)), url(../storage/arsenal.jpg);
+    min-height: 380px;
+    background-size: cover;
+}
+.bg_img_player {
+background: linear-gradient(#8caf33c4, rgb(0 0 0 / 76%)), url(../storage/point-table.jpg);
+    min-height: 380px;
+    background-size: cover;
+}
+.bg_img_Staff {
+ 
+
+
+        background: linear-gradient(#8caf33c4, rgb(0 0 0 / 76%)), url(../storage/staff.jpg);
+    min-height: 380px;
+    background-size: cover;
+}
+.color_jumboton{
+  color: #fff;
 }
 /* --------------------------jumbotronnindex -----------------------------*/
 
@@ -184,7 +206,7 @@
   height: 30vh; 
 }
 .img-team img{
-  width: 150px;
+  width: 200px;
   height: fit-content;
 }
 .img-team {
@@ -213,6 +235,8 @@
       opacity 0.5s ease, 
       transform 0.5s ease;
       background: linear-gradient(359deg, #0F3C12, #1d5d21a8, #2e6b2f80);
+      color: #fff;
+      padding: 1rem;
 }
 .team-name{
   width: 100%;

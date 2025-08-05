@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.clublist')
 
 @section('content')
  
@@ -9,7 +9,7 @@
         <div class="row">
           <div class="col-lg-3">
             <div class="img_club">
-              <img src="/asset/img/logo_footclub_400px.png" alt="">
+             <img src="{{ asset('storage/Team/' . $club->Img) }}"  class="w-100">
             </div> 
           </div>
           <div class="col-lg-9">
@@ -52,13 +52,19 @@
             <button class="nav-link" id="staff-tab" data-bs-toggle="tab" data-bs-target="#staff" type="button" role="tab" aria-controls="staff" aria-selected="false" style="color: #1a237e;">Staff</button>
           </li>
         </ul>
+         <style>
+            .tab-pane table tr{
+              text-align: center;
+
+          }
+          </style>
         <div class="tab-content" id="clubTabContent">
           <div class="tab-pane fade show active" id="players" role="tabpanel" aria-labelledby="players-tab">
             <div class="table-responsive">
               <table class="table table-hover">
                 <thead style="background-color: #1a237e; color: white;">
                   <tr>
-                    <th>Image</th>
+                    <th style="width: 100px;" >Image</th>
                     <th>Name</th>
                     <th>Position</th>
                     <th>Nationality</th>
@@ -72,7 +78,7 @@
                         <img src="{{ asset('storage/Player/' . $player->Img) }}" alt="" style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid #1a237e;">
                       </div>
                     </td>
-                    <td style="color: #1a237e; font-weight: 500;">{{ $player->FirstName }} {{ $player->LastName }}</td>
+                    <td style="color: #1a237e; font-weight: 500;"><a href="{{ route('player.detail', $player->Id) }}"> {{ $player->FirstName }} {{ $player->LastName }} </a></td>
                     <td style="color: #424242;">{{ $player->PositionName }}</td>
                     <td style="color: #424242;">{{ $player->Nationality }}</td>
                   </tr>
@@ -81,12 +87,14 @@
               </table>
             </div>
           </div>
+         
+          
           <div class="tab-pane fade" id="staff" role="tabpanel" aria-labelledby="staff-tab">
             <div class="table-responsive">
               <table class="table table-hover">
                 <thead style="background-color: #1a237e; color: white;">
                   <tr>
-                    <th>Image</th>
+                    <th style="width: 100px;">Image</th>
                     <th>Name</th>
                     <th>Position</th>
                     <th>Nationality</th>
@@ -100,7 +108,7 @@
                         <img src="{{ asset('storage/Staff/' . $staff->Img) }}" alt="" style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid #1a237e;">
                       </div>
                     </td>
-                    <td style="color: #1a237e; font-weight: 500;">{{ $staff->FirstName }} {{ $staff->LastName }}</td>
+                    <td style="color: #1a237e; font-weight: 500;"><a href="{{ route('StaffDetails', $staff->Id) }}"> {{ $staff->FirstName }} {{ $staff->LastName }}</a></td>
                     <td style="color: #424242;">{{ $staff->PositionName }}</td>
                     <td style="color: #424242;">{{ $staff->Nationality }}</td>
                   </tr>

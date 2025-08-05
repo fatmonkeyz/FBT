@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.Staff')
 
 @section('content')
 <div class="club-detail">
@@ -13,7 +13,7 @@
         <div class="row">
           <div class="col-lg-3">
             <div class="img_club">
-              <img src="{{ asset('storage/Staff/' . $Staff->Img) }}" style="width: 150px;"> 
+              <img src="{{ asset('storage/Staff/' . $Staff->Img) }}" class="w-100"> 
             </div>
           </div>
 

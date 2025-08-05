@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.player')
 
 @section('content')
  
@@ -15,7 +15,7 @@
           <div class="row">
             <div class="col-lg-3">
               <div class="img_club">
-                 <img src="{{ asset('storage/Player/' . $player->Img) }}" style="width: 150px;"> 
+                 <img src="{{ asset('storage/Player/' . $player->Img) }}"  class="w-100" alt=""> 
                  
               </div>
             </div>

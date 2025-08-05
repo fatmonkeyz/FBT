@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.clublist')
 
 @section('content')
 
@@ -38,7 +38,7 @@
         <a href="{{ route('ClubxDetail', $club->Id) }}">
         <div id="parent" class="card card-img" style="background-image: url('{{ asset('storage/view-empty-football-stadium.jpg' ) }}');">
           <div class="img-team">
-          <img src="{{ asset('storage' . $club->Img) }}" alt="">
+          <img src="{{ asset('storage/Team/' . $club->Img) }}" alt=""> 
           </div>
            
           <div class="team-name"><h6>{{ $club->TeamName }}</h6> </div>

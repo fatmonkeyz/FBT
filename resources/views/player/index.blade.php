@@ -1,5 +1,4 @@
-@extends('layouts.main')
-
+@extends('layouts.player')
 @section('content')
 
 <!-- Page Detail -->

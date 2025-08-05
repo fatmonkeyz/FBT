@@ -18,8 +18,8 @@
       <div class="container">
      <div class="nav_bar_status_wrap">
         <div class=" d-flex">
-          <p>Username : xxxxxxxxxxxxxx</p>
-          <span><p class="m-l-10">role : xxxxxxxxxxxxxx</p></span>
+          <p>Username : Admin</p>
+          <span><p class="m-l-10">role : Admin</p></span>
           <div class="ms-auto">
             <p>Logout</p>
           </div>
@@ -81,7 +81,7 @@
   <div class="p-5   bg_img  ">
     <div class="container py-5">
       <h6>Our Vision</h6>
-      <h1 class="display-5 fw-bold w-40">WE CONNECT 
+      <h1 class="display-5 fw-bold color_jumboton w-40">WE CONNECT 
         FOOTBALL TOGATHER</h1>
       <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
       <button class="btn btn-primary btn-lg" type="button">Login</button>
@@ -90,7 +90,7 @@
   <div class="p-5 mb-4  ">
     <div class="container py-5">
       <h6>Contact Us</h6>
-      <h1 class="display-5 fw-bold w-40">Get better care</h1>
+      <h1 class="display-5 fw-bold color_jumboton w-40">Get better care</h1>
       <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
       <button class="btn btn-primary btn-lg" type="button">Contact Now</button>
     </div>
